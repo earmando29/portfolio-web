@@ -1,4 +1,5 @@
 import React from 'react';
+import Pdf from '/assets/Resume_Armando_Espinoza.pdf'
 
 function Intro() {
     return (
@@ -10,9 +11,17 @@ function Intro() {
             <h1 className="text-4xl md:text-7xl dark:text-white mb-1 md:mb-3 font-bold">Armando Espinoza</h1>
             <p className="text-base md:text-xl mb-3 font-medium">Software Developer/Engineer Student</p>
             <p className="text-sm max-w-xl mb-6 font-bold">
-                I am Armando Espinoza pursuing a Computer Science Major at the University of Houston. 
+                I am {' '} 
+                <a 
+                    href={Pdf} 
+                    target='_blank'
+                    className="text-cyan-600 hover:underline underline-offset-2 decoration-2 decoration-orange-500"
+                >
+                    Armando Espinoza
+                </a> 
+                {' '} pursuing a Computer Science Major at the University of Houston. 
                 <br />
-                Currently in search of a internship for Summer 2023!
+                Currently in search of an internship for Summer 2023!
             </p>
         </div>
     )
