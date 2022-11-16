@@ -7,14 +7,15 @@ export default [
     },
     {
         title: 'EverGreene',
-        imgUrl: '/assets/Evergreene.png',
+        // imgUrl: '/assets/Evergreene.png',
+        imgUrl: 'public/assets/leaf.png',
         stack: ['HTML', 'CSS', 'JavaScript'],
-        link: 'nothing',
+        link: '',
     },
     {
         title: 'SnakeGame',
         imgUrl: '/assets/snake_game.png',
         stack: ['C++'],
-        link: 'nothing',
+        link: 'https://github.com/earmando29/Simple-Snake',
     }
 ]
