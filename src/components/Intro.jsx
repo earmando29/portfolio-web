@@ -12,8 +12,6 @@ function Intro() {
             <p className="text-sm max-w-xl mb-6 font-bold">
                 I am Armando Espinoza pursuing a Computer Science Major at the University of Houston. 
                 <br />
-                My expected graduation date is May 2024.
-                <br />
                 Currently in search of a internship for Summer 2023!
             </p>
         </div>
