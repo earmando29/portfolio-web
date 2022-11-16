@@ -8,7 +8,7 @@ export default [
     {
         title: 'EverGreene',
         // imgUrl: '/assets/Evergreene.png',
-        imgUrl: 'public/assets/leaf.png',
+        imgUrl: '/assets/leaf.png',
         stack: ['HTML', 'CSS', 'JavaScript'],
         link: '',
     },
