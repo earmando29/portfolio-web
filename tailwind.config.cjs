@@ -6,6 +6,9 @@ module.exports = {
       extend: {
         fontFamily: {
           inter: ['inter', 'serif'],
+        },
+        colors: {
+          'soft-white':'#FFF5EC',
         }
       },
   },

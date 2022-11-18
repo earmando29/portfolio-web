@@ -71,7 +71,7 @@ function App() {
 			>
 				{theme === 'dark' ? sun : moon}
 			</button>
-		<div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
+		<div className="bg-soft-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
 			<div className="max-w-5xl w-ll/12 mx-auto">
 				<Intro />
 				<Portfolio />
