@@ -2,17 +2,24 @@ import React from "react";
 
 function PortfolioItem({ title, imgUrl, stack, link }) {
     return (
-        <a 
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden"
-        >
+        // <a 
+        //     href={link}
+        //     target="_blank"
+        //     rel="noopener noreferrer"
+            // className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden"
+        // >
             <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
-                <img src={imgUrl}
-                alt="portfolio"
-                className="w-full h-36 md:h-48 object-cover cursor-pointer" 
+                <a 
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+
+                >
+                    <img src={imgUrl}
+                    alt="portfolio"
+                    className="w-full h-36 md:h-48 object-cover cursor-pointer" 
                 />
+                </a>
                 <div className="w-full p-4 dark:text-white"> 
                     <h3 className="text-lg md:text-xl mb-2 md:mv-3 font-semibold">
                         {title}
@@ -26,7 +33,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
                     </p>
                 </div>
             </div>
-        </a>
+        // </a>
     )
 }
 
