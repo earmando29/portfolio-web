@@ -33,7 +33,8 @@ function Contact() {
                         className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-pink-500 to-blue-500 drop-shadow-md hover:from-pink-600 hover:to-blue-600"
                         >
                         Contact Me
-                        </button>                        
+                    </button>
+                    <input type="hidden" name="_next" value="/Thanks.jsx"></input>                        
                 </form>
             </div>
         </div>
