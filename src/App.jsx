@@ -1,4 +1,5 @@
 import React, {useEffect, useState } from 'react';
+import Navbar from './components/NavBar';
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact';
@@ -63,14 +64,15 @@ function App() {
 	);
 
 	return (
-	<>
+	<>	
+		<Navbar />
 		<button
 			type="button"
 			onClick={handleThemeSwitch}
 			className="fixed p-1 z-10 right-20 top-4 bg-violet-300 hover:bg-violet-400 dark:bg-orange-300 dark:hover:bg-orange-400 text-lg rounded-md"
 			>
 				{theme === 'dark' ? sun : moon}
-			</button>
+		</button>
 		<div className="bg-soft-white dark:bg-stone-900 text-stone-800 dark:text-stone-300 min-h-screen font-inter">
 			<div className="max-w-5xl w-ll/12 mx-auto">
 				<Intro />
