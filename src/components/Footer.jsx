@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
     return (
-        <div className="py-5 text-center">
+        <div id="footer" className="py-5 text-center">
             <p className="text-md mb-1 opacity-50">Connect and Follow!</p>
                 <a 
                     href="https://www.linkedin.com/in/armando-espinoza999/"

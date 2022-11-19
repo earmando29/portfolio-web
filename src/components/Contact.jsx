@@ -3,7 +3,7 @@ import Title from "./Title";
 
 function Contact() {
     return (
-        <div className="flex flex-col mb-10 mx-auto">
+        <div id="contact" className="flex flex-col mb-10 mx-auto">
             <div className="flex justify-center items-center">
                 <form 
                     action="https://formsubmit.co/earmando29@gmail.com"

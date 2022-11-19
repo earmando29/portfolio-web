@@ -1,14 +1,13 @@
 import { useState, Fragment } from 'react'
-import { Link } from "react-router-dom";
-import Scroll from 'react-scroll'
+import { Link } from 'react-scroll'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Education', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Socials', href: '#', current: false },
+  { name: 'Projects', href: 'portfolio', current: false },
+  { name: 'Education', href: 'timeline', current: false },
+  { name: 'Contact', href: 'contact', current: false },
+  { name: 'Socials', href: 'footer', current: false },
 ]
 
 const logoLg = (
@@ -65,17 +64,20 @@ export default function Example() {
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">
                                 {navigation.map((item) => (
-                                    <a
-                                        key={item.name}
-                                        href={item.href}
+                                    <Link 
+                                        activeClass="active" 
+                                        to={item.href} 
+                                        spy={true} 
+                                        smooth={true} 
+                                        offset={-100} 
+                                        duration={500}
                                         className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-stone-800 dark:text-white hover:bg-gray-700 hover:text-white',
-                                        'px-3 py-2 rounded-md text-sm font-medium'
+                                            item.current ? 'bg-gray-900 text-white' : 'text-stone-800 dark:text-white hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium'
                                         )}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
