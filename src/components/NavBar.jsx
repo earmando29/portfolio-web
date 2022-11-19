@@ -46,7 +46,7 @@ export default function Example() {
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    {/* Mobile menu button*/}
+                    {/* Mobile hamburger */}
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-stone-800 dark:text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
@@ -56,6 +56,7 @@ export default function Example() {
                         )}
                     </Disclosure.Button>
                     </div>
+                    {/* Logo */}
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <Link
                             activeClass="active" 
@@ -70,6 +71,7 @@ export default function Example() {
                                     {logoSm}
                             </div>
                         </Link>
+                        {/* Desktop nav bar */}
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">
                                 {navigation.map((item) => (
@@ -93,7 +95,8 @@ export default function Example() {
                     </div>
                 </div>
             </div>
-            
+
+            {/* Mobile hamburger */}
             <Disclosure.Panel className="sm:hidden">
                 <div className="space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (
@@ -108,10 +111,8 @@ export default function Example() {
                         <Disclosure.Button
                             key={item.name}
                             as="a"
-                            // href={item.href}
                             className={classNames(
-                            item.current ? 'bg-gray-900 text-white' : 'text-stone-800 dark:text-white hover:bg-gray-700 hover:text-white',
-                            'block px-3 py-2 rounded-md text-base font-medium'
+                                item.current ? 'bg-gray-900 text-white' : 'text-stone-800 dark:text-white hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                         >
