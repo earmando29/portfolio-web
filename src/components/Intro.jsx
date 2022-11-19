@@ -15,7 +15,8 @@ function Intro() {
                 <a 
                     href={Pdf} 
                     target='_blank'
-                    className="text-pink-500 hover:underline underline-offset-2 decoration-2 decoration-blue-500"
+                    className="text-red-500 dark:text-pink-500 hover:underline underline-offset-2 decoration-2 decoration-blue-500"
+                    alt="Resume"
                 >
                     Armando Espinoza
                 </a> 
