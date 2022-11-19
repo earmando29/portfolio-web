@@ -12,7 +12,7 @@ const navigation = [
 
 const logoLg = (
     <svg 
-        className='hidden h-8 w-auto lg:block'
+        className='fill-stone-800 dark:fill-white hidden h-8 w-auto lg:block'
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 384 512"
     >
@@ -22,7 +22,7 @@ const logoLg = (
 
 const logoSm = (
     <svg 
-        className='block h-8 w-auto lg:hidden'
+        className='fill-stone-800 dark:fill-white block h-8 w-auto lg:hidden'
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 384 512"
     >
