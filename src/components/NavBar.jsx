@@ -2,11 +2,11 @@ import { useState, Fragment } from 'react'
 import { Link } from "react-router-dom";
 import Scroll from 'react-scroll'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Projects', href: '#', current: false },
-  { name: 'Timeline', href: '#', current: false },
+  { name: 'Education', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
   { name: 'Socials', href: '#', current: false },
 ]
@@ -40,7 +40,7 @@ export default function Example() {
   return (
     <Disclosure 
         as="nav" 
-        className="bg-stone-800 sticky top-0 z-30 shadow-2xl"
+        className="bg-soft-white dark:bg-stone-800 sticky top-0 z-30 shadow-xl"
     >
         {({ open }) => (
         <>
@@ -48,7 +48,7 @@ export default function Example() {
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     {/* Mobile menu button*/}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-stone-800 dark:text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                             <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -69,7 +69,7 @@ export default function Example() {
                                         key={item.name}
                                         href={item.href}
                                         className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        item.current ? 'bg-gray-900 text-white' : 'text-stone-800 dark:text-white hover:bg-gray-700 hover:text-white',
                                         'px-3 py-2 rounded-md text-sm font-medium'
                                         )}
                                         aria-current={item.current ? 'page' : undefined}
@@ -82,7 +82,7 @@ export default function Example() {
                     </div>
                 </div>
             </div>
-
+            
             <Disclosure.Panel className="sm:hidden">
                 <div className="space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (
@@ -91,7 +91,7 @@ export default function Example() {
                         as="a"
                         href={item.href}
                         className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        item.current ? 'bg-gray-900 text-white' : 'text-stone-800 dark:text-white hover:bg-gray-700 hover:text-white',
                         'block px-3 py-2 rounded-md text-base font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
