@@ -3,7 +3,7 @@ import Pdf from '/assets/Resume_Armando_Espinoza.pdf'
 
 function Intro() {
     return (
-        <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
+        <div id="intro" className="flex items-center justify-center flex-col text-center pt-20 pb-6">
             {/* <img src="public/assets/cowboy.jpg"
                 alt="Cowboy Armando"
                 className="w-half h-36 md:h-48 object-cover rounded-md" 
