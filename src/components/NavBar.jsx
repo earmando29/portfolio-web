@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { useState, Fragment } from 'react'
 import { Link } from "react-router-dom";
 import Scroll from 'react-scroll'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
@@ -38,8 +38,10 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" 
-        className="bg-stone-800">
+    <Disclosure 
+        as="nav" 
+        className="bg-stone-800 sticky top-0 z-30 shadow-2xl"
+    >
         {({ open }) => (
         <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
