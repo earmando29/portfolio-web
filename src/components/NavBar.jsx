@@ -2,6 +2,7 @@ import { useState, Fragment } from 'react'
 import { Link } from 'react-scroll'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import selfie from '/public/selfie.svg'
 
 const navigation = [
   { name: 'Projects', href: 'portfolio', current: false },
@@ -98,11 +99,11 @@ export default function Example() {
                   <div>
                     <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open user menu</span>
-                      <img
+                       <img
                         className="h-10 w-10 rounded-full"
-                        src="public/selfie.svg"
+                        src={selfie}
                         alt=""
-                      />
+                      /> 
                     </Menu.Button>
                   </div>
                   <Transition
