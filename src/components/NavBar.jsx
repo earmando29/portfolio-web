@@ -100,7 +100,7 @@ export default function Example() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-10 w-10 rounded-full"
-                        src="public/assets/selfie.jpg"
+                        src="public/selfie.svg"
                         alt=""
                       />
                     </Menu.Button>
