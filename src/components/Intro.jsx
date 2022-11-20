@@ -11,7 +11,7 @@ function Intro() {
             <h1 className="text-4xl md:text-7xl text-stone-800 dark:text-white mb-1 md:mb-3 font-bold">Armando Espinoza</h1>
             <p className="text-base md:text-xl mb-3 font-medium">Software Developer/Engineer Student</p>
             <p className="text-sm max-w-xl mb-6 font-bold">
-                I am {' '} 
+                Welcome! 😃 I am {' '} 
                 <a 
                     href={Pdf} 
                     target='_blank'
