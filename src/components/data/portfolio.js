@@ -1,5 +1,12 @@
 export default [
     {
+        title: 'Online Music Database',
+        imgUrl: '/assets/musicDB.png',
+        description: 'Register, login, upload and listen to music!',
+        stack: ['C#', 'MySQL', 'JavaScript', 'HTML','CSS'],
+        link: 'https://coogmusic14.azurewebsites.net/',
+    },
+    {
         title: 'Chat App',
         imgUrl: '/assets/chat_app.png',
         description: 'Message your friends!',
